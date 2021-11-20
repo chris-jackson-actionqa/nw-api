@@ -4,12 +4,16 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import Header from "./components/Header";
+import TutorialsSections from "./components/TutorialsSections";
 
 export default function App() {
   return (
     <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
         <Header />
+      </Box>
+      <Box sx={{ m: 10 }}>
+        <TutorialsSections />
       </Box>
     </Container>
   );

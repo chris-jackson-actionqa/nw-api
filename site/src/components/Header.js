@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography } from "@mui/material";
+import { AppBar, Toolbar, Typography, Link } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
 
@@ -15,9 +15,11 @@ export default function Header() {
   };
 
   const actionQaLogo = (
-    <Typography variant="h6" component="h1">
-      ActionQA
-    </Typography>
+    <Link href="#" color="#FFFFFF" underline="hover">
+      <Typography variant="h6" component="h1">
+        Nightwatch API Tutorial
+      </Typography>
+    </Link>
   );
 
   return (

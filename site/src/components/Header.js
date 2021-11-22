@@ -1,6 +1,7 @@
-import { AppBar, Toolbar, Typography, Link } from "@mui/material";
+import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(() => {
   header: {
@@ -15,11 +16,9 @@ export default function Header() {
   };
 
   const actionQaLogo = (
-    <Link href="#" color="#FFFFFF" underline="hover">
-      <Typography variant="h6" component="h1">
-        Nightwatch API Tutorial
-      </Typography>
-    </Link>
+    <Button to={"/"} component={Link} style={{ color: "#FFFFFF" }}>
+      Nightwatch API Tutorial
+    </Button>
   );
 
   return (

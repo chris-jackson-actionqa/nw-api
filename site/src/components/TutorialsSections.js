@@ -1,6 +1,5 @@
 import {
   Typography,
-  Link,
   Accordion,
   AccordionSummary,
   AccordionDetails,
@@ -8,6 +7,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { makeStyles } from "@mui/styles";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(() => {
   header: {
@@ -29,7 +29,23 @@ export default function TutorialsSections() {
         <AccordionDetails>
           <ul>
             <li>
-              <Link href="#">Bloop Bloop Bleep</Link>
+              <Link to="/foo">Foo</Link>
+            </li>
+          </ul>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>Section 2</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <ul>
+            <li>
+              <Link to="/foo">Foo</Link>
             </li>
           </ul>
         </AccordionDetails>

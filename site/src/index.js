@@ -7,6 +7,8 @@ import theme from "./theme";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Foo from "./routes/foo";
 import Home from "./routes/home";
+import Ide from "./routes/section01/ide";
+import ExampleSite from "./routes/section01/exampleSite"
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
@@ -17,6 +19,8 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route path="/" element={<Home />} />
           <Route path="foo" element={<Foo />} />
+          <Route path="s01/ide" element={<Ide />} />
+          <Route path="s01/example-site" element={<ExampleSite />} />
         </Route>
       </Routes>
     </Router>

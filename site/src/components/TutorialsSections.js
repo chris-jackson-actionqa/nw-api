@@ -24,17 +24,20 @@ export default function TutorialsSections() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Section 1: Intro</Typography>
+          <Typography>Intro</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <ul>
             <li>
-              <Link to="/foo">Foo</Link>
+              <Link to="/s01/ide">IDE and Node</Link>
+            </li>
+            <li>
+              <Link to="/s01/example-site">Example Site</Link>
             </li>
           </ul>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      {/* <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -49,7 +52,7 @@ export default function TutorialsSections() {
             </li>
           </ul>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
     </div>
   );
 }

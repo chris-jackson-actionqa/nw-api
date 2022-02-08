@@ -34,6 +34,9 @@ export default function TutorialsSections() {
             <li>
               <Link to="/s01/example-site">Example Site</Link>
             </li>
+            <li>
+              <Link to="/s01/package-json">package.json</Link>
+            </li>
           </ul>
         </AccordionDetails>
       </Accordion>

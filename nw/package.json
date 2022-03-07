@@ -12,6 +12,7 @@
   "devDependencies": {
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
+    "nightwatch": "^2.0.10",
     "prettier": "^2.5.1"
   }
 }

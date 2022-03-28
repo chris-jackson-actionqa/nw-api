@@ -6,3 +6,4 @@ extends: [eslint:recommended, prettier]
 parserOptions:
     ecmaVersion: latest
 rules: {}
+globals: { describe: 'read-only', it: 'read-only' }

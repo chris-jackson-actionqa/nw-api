@@ -8,8 +8,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Foo from "./routes/foo";
 import Home from "./routes/home";
 import Ide from "./routes/section01/ide";
-import ExampleSite from "./routes/section01/exampleSite"
-import PackageJson from "./routes/section01/packageJson"
+import ExampleSite from "./routes/section01/exampleSite";
+import PackageJson from "./routes/section01/packageJson";
+import Prettier from "./routes/section01/prettier";
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
@@ -23,6 +24,7 @@ ReactDOM.render(
           <Route path="s01/ide" element={<Ide />} />
           <Route path="s01/example-site" element={<ExampleSite />} />
           <Route path="s01/package-json" element={<PackageJson />} />
+          <Route path="s01/prettier" element={<Prettier />} />
         </Route>
       </Routes>
     </Router>

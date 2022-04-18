@@ -40,6 +40,9 @@ export default function TutorialsSections() {
             <li>
               <Link to="/s01/prettier">Prettier</Link>
             </li>
+            <li>
+              <Link to="/s01/eslint">Eslint</Link>
+            </li>
           </ul>
         </AccordionDetails>
       </Accordion>

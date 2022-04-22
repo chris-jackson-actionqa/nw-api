@@ -43,6 +43,9 @@ export default function TutorialsSections() {
             <li>
               <Link to="/s01/eslint">Eslint</Link>
             </li>
+            <li>
+              <Link to="/s01/install-nw">Install Nightwatch</Link>
+            </li>
           </ul>
         </AccordionDetails>
       </Accordion>

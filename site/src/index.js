@@ -12,6 +12,7 @@ import ExampleSite from "./routes/section01/exampleSite";
 import PackageJson from "./routes/section01/packageJson";
 import Prettier from "./routes/section01/prettier";
 import Eslint from "./routes/section01/eslint";
+import InstallNW from "./routes/section01/install-nw";
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
@@ -27,6 +28,7 @@ ReactDOM.render(
           <Route path="s01/package-json" element={<PackageJson />} />
           <Route path="s01/prettier" element={<Prettier />} />
           <Route path="s01/eslint" element={<Eslint />} />
+          <Route path="s01/install-nw" element={<InstallNW />} />
         </Route>
       </Routes>
     </Router>

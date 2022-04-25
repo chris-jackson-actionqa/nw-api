@@ -46,6 +46,9 @@ export default function TutorialsSections() {
             <li>
               <Link to="/s01/install-nw">Install Nightwatch</Link>
             </li>
+            <li>
+              <Link to="/s01/chromedriver">Chromedriver</Link>
+            </li>
           </ul>
         </AccordionDetails>
       </Accordion>

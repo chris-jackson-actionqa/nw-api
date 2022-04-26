@@ -14,6 +14,7 @@ import Prettier from "./routes/section01/prettier";
 import Eslint from "./routes/section01/eslint";
 import InstallNW from "./routes/section01/install-nw";
 import Chromedriver from "./routes/section01/chromedriver";
+import NightwatchConfigFile from "./routes/section01/nightwatchConfig";
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
@@ -31,6 +32,10 @@ ReactDOM.render(
           <Route path="s01/eslint" element={<Eslint />} />
           <Route path="s01/install-nw" element={<InstallNW />} />
           <Route path="s01/chromedriver" element={<Chromedriver />} />
+          <Route
+            path="s01/nightwatch-config"
+            element={<NightwatchConfigFile />}
+          />
         </Route>
       </Routes>
     </Router>

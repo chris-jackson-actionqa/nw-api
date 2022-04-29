@@ -37,7 +37,7 @@ module.exports = {
     test_settings: {
         default: {
             disable_error_log: false,
-            launch_url: 'https://nightwatchjs.org',
+            launch_url: 'http://localhost:3000',
 
             screenshots: {
                 enabled: false,
@@ -47,6 +47,11 @@ module.exports = {
 
             desiredCapabilities: {
                 browserName: 'chrome',
+                'goog:chromeOptions': {
+                    w3c: true,
+                    args: ['--no-sandbox'],
+                    excludeSwitches: ['enable-logging'],
+                },
             },
 
             webdriver: {

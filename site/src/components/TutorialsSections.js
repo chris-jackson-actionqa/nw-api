@@ -55,6 +55,22 @@ export default function TutorialsSections() {
           </ul>
         </AccordionDetails>
       </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>Section 2: Callbacks and Async/Await</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <ul>
+            <li>
+              <Link to="/s02/gettext">Example: getText</Link>
+            </li>
+          </ul>
+        </AccordionDetails>
+      </Accordion>
       {/* <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

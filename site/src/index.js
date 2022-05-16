@@ -7,6 +7,8 @@ import theme from "./theme";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Foo from "./routes/foo";
 import Home from "./routes/home";
+
+// Section 1: Intro
 import Ide from "./routes/section01/ide";
 import ExampleSite from "./routes/section01/exampleSite";
 import PackageJson from "./routes/section01/packageJson";
@@ -15,6 +17,9 @@ import Eslint from "./routes/section01/eslint";
 import InstallNW from "./routes/section01/install-nw";
 import Chromedriver from "./routes/section01/chromedriver";
 import NightwatchConfigFile from "./routes/section01/nightwatchConfig";
+
+// Section 2: Callbacks, Async/Await
+import ExampleGetText from "./routes/section02/exampleGetText";
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
@@ -36,6 +41,8 @@ ReactDOM.render(
             path="s01/nightwatch-config"
             element={<NightwatchConfigFile />}
           />
+
+          <Route path="s02/gettext" element={<ExampleGetText />} />
         </Route>
       </Routes>
     </Router>

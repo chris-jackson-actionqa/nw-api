@@ -71,6 +71,51 @@ export default function TutorialsSections() {
           </ul>
         </AccordionDetails>
       </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography>
+            Section 3: Locators, Selectors, and Web Element IDs
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <ul>
+            <li>
+              <Link to="/s03/locatorStrategies">Locator Strategies</Link>
+            </li>
+            <li>
+              <Link to="/s03/locatorStrategiesExercise">
+                EXERCISE: Locator Strategies
+              </Link>
+            </li>
+            <li>
+              <Link to="/s03/relativeLocators">Relative Locators</Link>
+            </li>
+            <li>
+              <Link to="/s03/relativeLocatorsExercise">
+                EXERCISE: Relative Locators
+              </Link>
+            </li>
+            <li>
+              <Link to="/s03/selectorObject">Selector Object</Link>
+            </li>
+            <li>
+              <Link to="/s03/selectorObjectExercise">
+                EXERCISE: Selector Object
+              </Link>
+            </li>
+            <li>
+              <Link to="/s03/webElementIdAndElement">
+                Web Element IDs and "element()"
+              </Link>
+            </li>
+          </ul>
+        </AccordionDetails>
+      </Accordion>
+
       {/* <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

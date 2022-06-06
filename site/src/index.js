@@ -21,6 +21,15 @@ import NightwatchConfigFile from "./routes/section01/nightwatchConfig";
 // Section 2: Callbacks, Async/Await
 import ExampleGetText from "./routes/section02/exampleGetText";
 
+// Section 3: Locator Strategies
+import LocatorStrategies from "./routes/section03/locatorStrategies";
+import LocatorStrategiesExercise from "./routes/section03/locatorStrategiesExercise";
+import RelativeLocators from "./routes/section03/relativeLocators";
+import RelativeLocatorsExercise from "./routes/section03/relativeLocatorsExercise";
+import SelectorObject from "./routes/section03/selectorObject";
+import SelectorObjectExercise from "./routes/section03/selectorObjectExercise";
+import WebElementIdAndElement from "./routes/section03/webElementIdAndElement";
+
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
@@ -42,7 +51,29 @@ ReactDOM.render(
             element={<NightwatchConfigFile />}
           />
 
+          {/* -------------- SECTION 02 -------------*/}
           <Route path="s02/gettext" element={<ExampleGetText />} />
+
+          {/* -------------- SECTION 03 -------------------- */}
+          <Route path="s03/locatorStrategies" element={<LocatorStrategies />} />
+          <Route
+            path="s03/locatorStrategiesExercise"
+            element={<LocatorStrategiesExercise />}
+          />
+          <Route path="s03/relativeLocators" element={<RelativeLocators />} />
+          <Route
+            path="s03/relativeLocatorsExercise"
+            element={<RelativeLocatorsExercise />}
+          />
+          <Route path="s03/selectorObject" element={<SelectorObject />} />
+          <Route
+            path="s03/selectorObjectExercise"
+            element={<SelectorObjectExercise />}
+          />
+          <Route
+            path="s03/webElementIdAndElement"
+            element={<WebElementIdAndElement />}
+          />
         </Route>
       </Routes>
     </Router>

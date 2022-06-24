@@ -109,6 +109,33 @@ module.exports = {
             },
         },
 
+        github_chrome: {
+            desiredCapabilities: {
+                browserName: 'chrome',
+                'goog:chromeOptions': {
+                    // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
+                    //
+                    // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
+                    w3c: true,
+                    args: [
+                        '--no-sandbox',
+                        '--ignore-certificate-errors',
+                        '--allow-insecure-localhost',
+                        '--headless'
+                    ],
+                    binary: process.env.CHROME_BIN_PATH
+                },
+            },
+
+            webdriver: {
+                start_process: true,
+                server_path: '',
+                cli_args: [
+                    // --verbose
+                ],
+            },
+        },
+
         edge: {
             desiredCapabilities: {
                 browserName: 'MicrosoftEdge',

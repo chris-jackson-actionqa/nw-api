@@ -1,8 +1,8 @@
 import { red } from "@mui/material/colors";
-import { createTheme } from "@mui/material/styles";
+import { createTheme, adaptV4Theme } from "@mui/material/styles";
 
 // A custom theme for this app
-const theme = createTheme({
+const theme = createTheme(adaptV4Theme({
   palette: {
     primary: {
       main: "#556cd6",
@@ -23,6 +23,6 @@ const theme = createTheme({
       fontSize: 30,
     },
   },
-});
+}));
 
 export default theme;

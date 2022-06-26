@@ -1,0 +1,44 @@
+name: GitHub Actions Demo
+on: [push, pull_request]
+jobs:
+  build-run-site-and-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Chrome
+        run: |
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt install ./google-chrome-stable_current_amd64.deb
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: build and run site
+        working-directory: ./site
+        run: |
+          npm i
+          BROWSER=none npm start &
+          npx --yes wait-on http://localhost:3000
+      - name: install Nightwatch
+        working-directory: ./nw
+        run: |
+          npm i
+          npm remove chromedriver
+          CHROMEDRIVER_VERSION=LATEST npm i --save-dev chromedriver
+      - name: versions
+        working-directory: ./nw
+        run: |
+          echo Node
+          node --version
+          echo chromedriver
+          npx chromedriver --version
+          # echo chrome
+          # chrome --version
+          echo Nightwatch
+          npx nightwatch --version
+
+      - name: Run Nightwatch
+        working-directory: ./nw
+        run: |
+          CHROME_BIN_PATH=$(which chrome) npx nightwatch -e github_chrome

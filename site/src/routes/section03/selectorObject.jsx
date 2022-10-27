@@ -14,13 +14,38 @@ export default function SelectorObject() {
         <Grid container spacing={5}>
           <Grid item xs={buttonColumns}>
             <Stack spacing={3}>
-              <Button variant="contained" data-testid="show-button">
+              <Button
+                variant="contained"
+                data-testid="show-button"
+                onClick={() => {
+                  document.getElementById("toggled-image").style.display =
+                    "inline";
+                }}
+              >
                 Show
               </Button>
-              <Button variant="contained" data-testid="hide-button">
+              <Button
+                variant="contained"
+                data-testid="hide-button"
+                onClick={() => {
+                  document.getElementById("toggled-image").style.display =
+                    "none";
+                }}
+              >
                 Hide
               </Button>
-              <Button variant="contained" data-testid="peek-a-boo-button">
+              <Button
+                variant="contained"
+                data-testid="peek-a-boo-button"
+                onClick={() => {
+                  document.getElementById("toggled-image").style.display =
+                    "none";
+                  setTimeout(() => {
+                    document.getElementById("toggled-image").style.display =
+                      "inline";
+                  }, 7000);
+                }}
+              >
                 Peek-a-boo
               </Button>
             </Stack>
@@ -29,6 +54,7 @@ export default function SelectorObject() {
             <Box
               component="img"
               src="/pexels-owl.jpg"
+              id="toggled-image"
               data-testid="toggled-image"
             />
           </Grid>

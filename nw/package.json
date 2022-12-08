@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "install:chromedriver": "npm install chromedriver --detect_chromedriver_version"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chromedriver": "^105.0.0",
+    "chromedriver": "^105.0.1",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
     "nightwatch": "^2.1.0",
